@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-sans: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-alabaster: #F7F4EF;
+  --color-alabaster-subtle: #F2EFEA;
+  --color-paper: #FFFFFF;
+  --color-stone-muted: #EFECE6;
+  --color-stone-border: #E5DFD5;
+  --color-stone-line: #DDD5C9;
+  
+  --color-espresso: #1E1B18;
+  --color-umber: #6E665E;
+  --color-umber-light: #9B9187;
+  
+  --color-terracotta: #C85A32;
+  --color-terracotta-hover: #AF4A24;
+  --color-terracotta-bg: #FCF4F0;
+  --color-terracotta-border: #F3CEBE;
+  
+  --color-botanical: #2A6F4E;
+  --color-botanical-bg: #E6F2EC;
+  --color-botanical-border: #BEE0CF;
+  
+  --color-amber-warning: #B85D19;
+  --color-amber-bg: #FDF1E6;
+  --color-amber-border: #F7D8BD;
+}
+
+:root {
+  --background: #F7F4EF;
+  --foreground: #1E1B18;
+}
+
+body {
+  background-color: #F7F4EF;
+  color: #1E1B18;
+  font-family: var(--font-plus-jakarta), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tactile Editorial 2D Utilities */
+.ledger-border {
+  border: 1px solid #E5DFD5;
+}
+
+.ledger-border-b {
+  border-bottom: 1px solid #E5DFD5;
+}
+
+.ledger-border-t {
+  border-top: 1px solid #E5DFD5;
+}
+
+.ledger-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5DFD5;
+  box-shadow: 0 1px 3px rgba(30, 27, 24, 0.04), 0 1px 2px rgba(30, 27, 24, 0.02);
+}
+
+.ledger-stamp {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.tactile-btn {
+  transition: all 0.12s ease-in-out;
+}
+
+.tactile-btn:active {
+  transform: translateY(1px);
+}
+
+/* Custom ledger scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F4EF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDD5C9;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C8BFB2;
+}
